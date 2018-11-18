@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px;
+}
+img,embed,object,video{
+    max-width: 100%;
+}
+@font-face{
+    font-family: "h1";
+    src: url("./IndieFest.ttf");
+   
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    font-family: "h1";
+    font-size: 50px;
+}
+
+#logo{
+    float: left;
+}
+
+main{
+    font-size: 18px;
+    width: 100%;
+   
+}
+
+img,embed,object{
+    max-width: 100%;
+}
+footer{
+    background-color: rgba(240, 91, 73, 0.7);
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.redes{
+    float: right;
+}
+p{
+    text-align: center;
+    padding: 10px;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+
+
+ 
+
