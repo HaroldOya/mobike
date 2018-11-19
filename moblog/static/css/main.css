@@ -51,10 +51,24 @@ p{
 
 body{
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 }
 
+.login{
+    margin-left: 40%;
+    width: 25%;
+    background-color: rgba(8, 7, 7, 0.7);
+}
+
+.imagen-galery{
+    border: solid;
+    width: 350px;
+}
+.regi{
+    height: 500px;
+}
 
 
  

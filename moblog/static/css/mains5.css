@@ -1,0 +1,66 @@
+@media screen and (min-width: 300px){
+    header{
+        font-family: "tittle";
+        width: 100%;
+        background-color: rgb(240, 91, 73);
+
+    }
+    nav{
+        width: 100%;
+        text-align: center;
+        background-color: rgb(240, 91, 73);
+    }
+
+    .nav{
+        display: grid;
+        margin: 0px ;
+        text-decoration-line: none;
+        
+        
+       
+    }
+    
+    .nav a{
+        text-decoration: none;
+        padding: 20px 48px;
+        margin: 0%;
+        color: black;    
+    }
+    
+    .nav a:hover{
+        background-color: gray;
+    }
+    
+    nav ul{
+        margin: 0%;
+        
+    }
+    input, select{
+        border: 2px solid;
+        border-radius: 4px;
+        height: 30px;
+        width: 150px;
+    }
+
+    .texto{
+        width: 100%;
+        background-color: white;
+        padding: 20px 0px;
+    }
+    .img-galery{
+        height: 300px;
+        width: 350px;
+
+    }
+    
+    .textos{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+      
+    }
+   
+
+    
+}

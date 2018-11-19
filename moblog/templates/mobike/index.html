@@ -8,8 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="icon" href="{% static 'img/logos.png' %}" />       
         <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'css/mains5.css' %}">
         <link rel="stylesheet" href="{% static 'css/mainEsc.css' %}">
-  
+        
     </head>
     <body background="{% static 'img/foto.jpg' %}">   
          
@@ -23,11 +24,11 @@
               <nav>
                     <a href="" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
                    <ul class="menu">
-                       <li class="nav"><a href="">Inicio</a></li>
-                       <li class="nav"><a href="">Registrate</a></li>
-                       <li class="nav"><a href="">Galería</a></li>
+                       <li class="nav"><a href="{% url 'inicio' %}">Inicio</a></li>
+                       <li class="nav"><a href="{% url 'registro' %}">Registrate</a></li>
+                       <li class="nav"><a href="{% url 'user_login' %}">Sesión</a></li>
                        {% if user.is_authenticated %}
-                       <li class="nav"><a href="">Agregar Perro</a></li>
+                       <li class="nav"><a href="{% url 'arrendar' %}">Arrendar</a></li>
                        {% endif %}
                     </ul>
                     
@@ -44,6 +45,15 @@
                         <img src="{% static 'img/correo50.png'%}" alt="correo icono" >
                     </div>
                 &copy; Todos los Derechos Reservados
+                <br>
+                {% if user.is_authenticated %}
+                ¡Hola {{user.username}} !
+                <form method="POST" action="/logout/">
+                    {% csrf_token %}
+                    <input type="submit" value="Logout">
+                </form>
+
+                {% endif %}
                     <div class="redes">
               </div>
               

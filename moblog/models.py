@@ -1,5 +1,8 @@
 from django.db import models
 from django.utils import timezone
+from django import forms
+from django.contrib.auth.models import User
+from django.conf import settings
 
 
 class Bici(models.Model):
@@ -17,3 +20,5 @@ class Bici(models.Model):
 
     def __str__(self):
         return self.codigo
+
+       

@@ -1,0 +1,31 @@
+{% extends 'mobike/index.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="galeria">
+            <h1 class="titulos" style="text-align: center">Bicicletas</h1>
+            <center>
+                    <img class="imagen-galery" src="{% static 'img/bici.jpg' %}" alt="bicicleta arrendar">
+            </center>
+            
+            <u><p> <b><area-label>Codigo: 458745</area-label></b></u> 
+            <p> <b><area-label>Estado: Disponible</area-label></b>     
+            <b> <area-label>Lugar: Maipu, Santiago</area-label></b></p> 
+
+            <br>
+            <br>
+            <center>
+                    <img class="imagen-galery" src="{% static 'img/bici.jpg' %}" alt="bicicleta arrendar">
+            </center>
+            
+            <u><p> <b><area-label>Codigo: 45333245</area-label></b></u> 
+            <p> <b><area-label>Estado: Ocupada</area-label></b>     
+            <b> <area-label>Lugar: Maipu, Santiago</area-label></b></p> 
+    </div>
+      
+</div>
+          
+              
+            
+
+{% endblock %}    
